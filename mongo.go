@@ -1,4 +1,4 @@
-package connection
+package coveragetest
 
 import (
 	"os"
@@ -17,7 +17,7 @@ func Mongo() *mgo.Database {
 
 	return mongo_session.DB(os.Getenv("DB_MONGO_DATABASE"))
 }
-	
+
 func MongoSession() *mgo.Session {
 	mongo_addresses := strings.Split(os.Getenv("DB_MONGO_HOST"), ",")
 
