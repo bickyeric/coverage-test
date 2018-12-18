@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestMongo(t *testing.T) {
+func TestFoo(t *testing.T) {
 
 	assert.Equal(t, 1, 1, "The two words should be the same.")
-	assert.NotPanics(t, func() { coveragetest.MongoSession() }, "Eh malah error")
+	assert.Equal(t, coveragetest.Foo(45), true, "contoh doang")
 }
